@@ -11,6 +11,10 @@ metadata:
     nginx.ingress.kubernetes.io/proxy-read-timeout: "600"
     nginx.ingress.kubernetes.io/proxy-send-timeout: "600"
 spec:
+  tls:
+  - hosts:
+    - microproject.com
+    secretName: microproject-tls-2
   rules:
     - host: microproject.com
       http:

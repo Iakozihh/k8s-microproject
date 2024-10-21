@@ -143,3 +143,17 @@ kubectl get ingress
 ```bash
 curl --resolve "<ingress-host>:80:<ingress-address>" -i http://<ingress-host>/
 ```
+
+### SSL
+
+```bash
+kubectl create secret tls microproject-tls-2 --cert=certificate.crt --key=private.key --namespace=default
+```
+
+Et importer le certificat dans Windows car c'est pas un vrai certificat
+
+```bash
+curl.exe --resolve "microproject.com:443:127.0.0.1" -i https://microproject.com/
+```
+
+et ça marche :)
