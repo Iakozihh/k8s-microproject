@@ -1,0 +1,9 @@
+apiVersion: apps/v1
+kind: ConfigMap
+metadata:
+  name: the-map
+data:
+  POSTGRES_DB: microproject
+  POSTGRES_USER: microproject
+  POSTGRES_PASSWORD: microproject
+  POSTGRES_HOST: postgres
