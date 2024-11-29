@@ -7,3 +7,4 @@ data:
   POSTGRES_USER: microproject
   POSTGRES_PASSWORD: microproject
   POSTGRES_HOST: postgres
+  USER_NAME: microproject
