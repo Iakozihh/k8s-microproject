@@ -39,7 +39,7 @@ spec:
                 name: the-map
           volumeMounts:
           - name: k8s-microproject-persistent-storage
-            mountPath: /usr/share/nginx/html
+            mountPath: /app
       volumes:
       - name: k8s-microproject-persistent-storage
         persistentVolumeClaim:
