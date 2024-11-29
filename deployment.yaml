@@ -14,3 +14,10 @@ spec:
       containers:
         - name: microprojectcontainer
           image: hizokai/k8s-microproject
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 8080
+            initialDelaySeconds: 5
+            periodSeconds: 5
+    
